@@ -1,4 +1,4 @@
 # Sign up form project for TOP
 
 
-Credit to Damir Spanic for using bodybuilding photo: https://unsplash.com/photos/_tIBef8zGGA.
+Credit to Scott Webb for using this photo: https://unsplash.com/photos/UjupleczBOY
