@@ -3,6 +3,11 @@
     src: url(fonts/Norse-Bold.otf);
 }
 
+@font-face {
+    font-family: roboto-serif;
+    src: url(fonts/Roboto_Serif/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.ttf);
+}
+
 :root {
     font-size: 16px;
 }
@@ -109,7 +114,7 @@ Starting with left section of the page where is logo*/
 
 .button-container {
     flex-direction: column;
-    margin-top: 30px;
+    padding-top: 30px;
     gap: 25px;
 }
 
@@ -138,29 +143,43 @@ a:hover {
 }
 
 /*From here right side with form */
+.form-section {
+    color: #010b13;
+}
+
+.title-container,
+.button-container {
+    background-color: #a2a099;
+}
+
 .title-container p {
     line-height: 30px;
-}
-.title-container p {
+    font-family: roboto-serif;
     font-size: calc(15px + .7vw);
     width: 60%;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 .form-container {
-    border: solid;
+    background-color: #d0cdc4;
 }
 
 .form-container h1 {
+    font-family: roboto-serif;
     font-size: 1.7rem;
+    font-weight: bold;
 }
 
 .form-container label {
+    font-family: roboto-serif;
     font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: bold;
 }
 .form-container input {
     width: calc(50px + 12vw);
     height: 25px;
+    border-radius: 5px;
 }
 
 .first-section div,
@@ -170,11 +189,13 @@ a:hover {
 
 .button-container button {
     font-size: calc(1rem + .2vw);
-    ;
     width: calc(50px + 10vw);
     height: calc(5px + 5vh);;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .button-container p {
-    font-size: 1.3rem
+    font-size: 1.3rem;
 }
