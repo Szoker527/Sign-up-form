@@ -3,6 +3,9 @@
     src: url(fonts/Norse-Bold.otf);
 }
 
+:root {
+    font-size: 16px;
+}
 body {
     display: flex;
     overflow: hidden;
@@ -48,34 +51,66 @@ Starting with left section of the page where is logo*/
 }
 /*In this section is form part that is on the right side */
 .form-section {
-    flex: 1.8;
+    flex: 1.5;
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 
 .title-container,
-.form-container,
 .button-container {
-    flex: 1;
-    margin-left: 2vw;
+    display: flex;
+    flex: 2;
+    padding-left: 3vw;
+}
+
+.title-container div {
+    align-self: flex-end;
+    margin-bottom: 25px;
+}
+
+.title {
+    margin-bottom: 15px;
 }
 
 .form-container {
     display: flex;
     flex-direction: column;
-    flex: 2;
+    flex: 1;
+    padding-left: 3vw;
+    
+}
+
+.form-container h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .form-container form {
     display: flex;
     flex-direction: row;
-    margin-bottom: 10vh;
+    flex: 1;
+    margin-bottom: 25px;
 }
 
+.first-section div,
+.second-section div {
+    margin-bottom: 25px;
+}
+
+.first-section {
+    flex: 1;
+}
 
 .second-section {
-    margin-left: 12rem;
+    margin-left: 4rem;
+    flex: 1.5;
+}
+
+.button-container {
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 25px;
 }
 
 /*From here will be style elements 
@@ -100,4 +135,46 @@ a {
 
 a:hover {
     color: blue;
+}
+
+/*From here right side with form */
+.title-container p {
+    line-height: 30px;
+}
+.title-container p {
+    font-size: calc(15px + .7vw);
+    width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.form-container {
+    border: solid;
+}
+
+.form-container h1 {
+    font-size: 1.7rem;
+}
+
+.form-container label {
+    font-size: 0.9rem;
+}
+.form-container input {
+    width: calc(50px + 12vw);
+    height: 25px;
+}
+
+.first-section div,
+.second-section div {
+    
+}
+
+.button-container button {
+    font-size: calc(1rem + .2vw);
+    ;
+    width: calc(50px + 10vw);
+    height: calc(5px + 5vh);;
+}
+
+.button-container p {
+    font-size: 1.3rem
 }
