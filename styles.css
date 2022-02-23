@@ -199,20 +199,19 @@ a:hover {
     width: calc(50px + 12vw);
     height: 25px;
     border-radius: 5px;
-}
-
-.first-section div,
-.second-section div {
-    
+    font-weight: 700;
 }
 
 .button-container button {
+    font-family: roboto-serif;
     font-size: calc(1rem + .2vw);
     width: calc(50px + 10vw);
     height: calc(5px + 5vh);;
     border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
+    background-color: #E1E1E1;
+    color: #141414
 }
 
 .button-container p {
@@ -223,3 +222,6 @@ a:hover {
 .button-container span {
     color: #c94c4c;
 }
+
+
+

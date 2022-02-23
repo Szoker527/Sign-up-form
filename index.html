@@ -22,7 +22,7 @@
             <div>Photo by <a href="https://unsplash.com/@malcoo">Tomáš Malík</a> on <a href="https://unsplash.com/photos/N9Fl32CFMfU">Unsplash</a></div>
         </div>
     </div>
-    <div class="form-section box-shadow">
+    <div class="form-section">
         <div class="title-container">
             <div>
                 <p class="title"><span>Register Now!</span> Unlock all the beauty of Japan and all of it's secrets with our company!</p>
@@ -33,40 +33,40 @@
             <div class="form-title">
                 <h1>Let's do this!</h1>
             </div>
-                <form action="#">
+                <form action="#" id="japan-form">
                     <div class="first-section">
                         <div>
                             <label for="first-name">FIRST NAME</label><br>
-                            <input type="text" name="first_name" id="first-name">
+                            <input type="text" name="first_name" id="first-name" maxlength="16" required>
                         </div>
                         <div>
                             <label for="email">E-MAIL</label><br>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                         </div>
                         <div>
                             <label for="password">PASSWORD</label><br>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" minlength="8" maxlength="16" required>
                         </div>
                     </div>
                     <div class="second-section">
                         <div>
                             <label for="last-name">LAST NAME</label><br>
-                            <input type="text" name="last_name" id="last-name">
+                            <input type="text" name="last_name" id="last-name"  maxlength="16" required>
                         </div>
-                        <div>
+                        <div>   
                             <label for="phone">PHONE NUMBER</label><br>
-                            <input type="number" name="phone" id="phone">
+                            <input type="number" name="phone" id="phone" maxlength="15" required>
                         </div>
                         <div>
                             <label for="password-conf">CONFIRM PASSWORD</label><br>   
-                            <input type="passsword" name="password_conf" id="password-conf">
+                            <input type="passsword" name="password_conf" id="password-conf"  minlength="8" maxlength="16" required>
                         </div>
                     </div>
                 </form>
         </div>
         <div class="button-container">
             <div>
-                <button>Create Account</button>
+                <button type="submit" form="japan-form">Create Account</button>
             </div>
             <div>
                 <p>Already have an account?<span> Log in</span></p>
