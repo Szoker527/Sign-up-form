@@ -15,6 +15,16 @@ body {
     display: flex;
     overflow: hidden;
 }
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+}
+
+
 /* This section contains positioning of elements
 Starting with left section of the page where is logo*/
 .logo-section {
@@ -150,6 +160,7 @@ a:hover {
 /*From here right side with form */
 .form-section {
     color:  #141414;
+    position: relative;
 }
 
 .title-container,
@@ -181,6 +192,18 @@ a:hover {
 .form-container {
     background-color: #E1E1E1;
     color: #141414;
+    position: relative;
+}
+
+.box-shadow:after {
+    content:"";
+    position:absolute;
+    left: 0;
+    width:100%;
+    bottom:1px;
+    z-index:0;
+    transform:scale(1);
+    box-shadow: 0px 7px 21px 1px #000000;
 }
 
 .form-container h1 {
@@ -223,5 +246,11 @@ a:hover {
     color: #c94c4c;
 }
 
+.button-container span:hover {
+    color: #141414;
+}
 
-
+.button-container button:hover {
+    color: #E1E1E1;
+    background-color: #141414;
+} 
